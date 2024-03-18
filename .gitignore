@@ -3,6 +3,16 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Temporary, system, IDE files
+tmp/
+.DS_Store
+**/.DS_Store
+*.vim
+.idea
+.vscode/
+.listing
+yarn-error.log
+
 # User-specific files
 *.suo
 *.user
