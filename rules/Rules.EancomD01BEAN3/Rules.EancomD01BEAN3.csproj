@@ -1,62 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{344F2698-7A31-4DDB-9053-9F8BA8A53131}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EdiWeave.Rules.EancomD01BEAN3</RootNamespace>
-    <AssemblyName>EdiWeave.Rules.EancomD01BEAN3</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <PackageId>EdiWeave.Rules.EancomD01BEAN3</PackageId>
+    <Version>2.0.0</Version>
+    <Title>EdiWeave.Rules.EancomD01BEAN3</Title>
+    <Authors>Silvenga;gamingrobot;GoVolsGo</Authors>
+    <Description>
+      An open-source, mutli-platform EDI framework for .NET - parse and create X12, HIPAA, EDIFACT, EANCOM, VDA and PNRGOV documents with ease.
+      
+      EdiWeave is a separate hard-fork of the now closed-source library EdiFabric.
+    </Description>
+    <Copyright>Copyright 2024</Copyright>
+    <PackageLicenseUrl>https://github.com/GoVolsGo/EdiWeave/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/GoVolsGo/EdiWeave/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/GoVolsGo/EdiWeave/</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/GoVolsGo/EdiWeave/master/Assets/nuget-logo.png</PackageIconUrl>
+    <PackageTags>.NET-EDI-Framework EDIFACT X12 HIPAA EANCOM</PackageTags>
+    <TargetFrameworks>net45</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <ProjectReference Include="..\..\src\EdiWeave.Core\EdiWeave.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="EF_EANCOM3_D01BEAN3_Codes.cs" />
-    <Compile Include="EF_EANCOM3_D01BEAN3_ComplexElements.cs" />
-    <Compile Include="EF_EANCOM3_D01BEAN3_Segments.cs" />
-    <Compile Include="EF_EANCOM3_D01BEAN3_TSINVOIC.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\EdiWeave.Core\EdiWeave.Core.csproj">
-      <Project>{235a10b1-bb49-4e27-b993-69179253076f}</Project>
-      <Name>EdiWeave.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
