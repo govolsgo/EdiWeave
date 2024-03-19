@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/GoVolsGo/EdiWeave/</RepositoryUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/GoVolsGo/EdiWeave/master/Assets/nuget-logo.png</PackageIconUrl>
     <PackageTags>.NET-EDI-Framework EDIFACT X12 HIPAA EANCOM</PackageTags>
-    <TargetFrameworks>net45;netstandard1.6;netstandard2.0;netcoreapp1.1;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net45;netstandard1.6;netstandard2.0;netcoreapp1.1;netcoreapp2.0;net6.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\EdiWeave.Core\EdiWeave.Core.csproj" />
